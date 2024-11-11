@@ -19,13 +19,13 @@ load_dotenv()
 
 # Get it from my.telegram.org
 
-API_ID = int(getenv("API_ID", ""))
+API_ID = int(getenv("API_ID", "28393298"))
 
-API_HASH = getenv("API_HASH")
+API_HASH = getenv("API_HASH", "31ad5c4fd23fdfc561c49ba62e94f460")
 
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "7643915863:AAEqo5PJCI1K13iJliOFr9epYkWTr3jywAM")
 
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
@@ -71,12 +71,12 @@ SONG_DOWNLOAD_DURATION = int(
 
 
 # You'll need a Log Group Username for this.
-LOG_GROUP_ID = (getenv("LOG_GROUP_ID", ""))
+LOG_GROUP_ID = (getenv("LOG_GROUP_ID", "-1002289729859"))
 
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "11679112664").split())
+    map(int, getenv("OWNER_ID", "5073636842").split())
 )  # Input type must be interger
 
 
@@ -121,11 +121,11 @@ SUPPORT_CHANNEL = getenv(
     "SUPPORT_CHANNEL", "https://t.me/ai_image_junction"
 )  # Example:- https://t.me/ai_image_junction
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", "https://t.me/+7ehnJA3aMb84OGNl"
+    "SUPPORT_GROUP", "https://t.me/+3S8EI42Yx3M1Yzhl"
 )  # Example:- https://t.me/+7ehnJA3aMb84OGNl
 
 SUPPORT_CHAT = getenv(
-    "SUPPORT_GROUP", "https://t.me/+7ehnJA3aMb84OGNl"
+    "SUPPORT_GROUP", "https://t.me/+3S8EI42Yx3M1Yzhl"
 )  # Example:- https://t.me/+7ehnJA3aMb84OGNl
 
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
@@ -336,7 +336,7 @@ if PING_IMG_URL:
 
 
 if PLAYLIST_IMG_URL:
-    if PLAYLIST_IMG_URL != "https://envs.sh/nOh.jpg":
+    if PLAYLIST_IMG_URL != "https://graph.org/file/541179c4226568884e2c8-458b3ab9f686a3224a.png:
         if not re.match("(?:http|https)://", PLAYLIST_IMG_URL):
             print(
                 "[ERROR] - Your PLAYLIST_IMG_URL url is wrong. Please ensure that it starts with https://"
@@ -352,7 +352,7 @@ if GLOBAL_IMG_URL:
 
 
 if STATS_IMG_URL:
-    if STATS_IMG_URL != "https://telegra.ph/file/4dd9e2c231eaf7c290404.jpg":
+    if STATS_IMG_URL != "https://graph.org/file/a7a27e07cbc6c433ae7e3-8cc57ac43f3e662fa5.png":
         if not re.match("(?:http|https)://", STATS_IMG_URL):
             print(
                 "[ERROR] - Your STATS_IMG_URL url is wrong. Please ensure that it starts with https://"
@@ -360,7 +360,7 @@ if STATS_IMG_URL:
 
 
 if TELEGRAM_AUDIO_URL:
-    if TELEGRAM_AUDIO_URL != "https://telegra.ph/file/8234d704952738ebcda7f.jpg":
+    if TELEGRAM_AUDIO_URL != "https://graph.org/file/215d59a8c4b9840cf2ec9-be779e164227b85d2a.png":
         if not re.match("(?:http|https)://", TELEGRAM_AUDIO_URL):
             print(
                 "[ERROR] - Your TELEGRAM_AUDIO_URL url is wrong. Please ensure that it starts with https://"
@@ -368,7 +368,7 @@ if TELEGRAM_AUDIO_URL:
 
 
 if STREAM_IMG_URL:
-    if STREAM_IMG_URL != "https://telegra.ph/file/e24f4a5f695ec5576a8f3.jpg":
+    if STREAM_IMG_URL != "https://graph.org/file/5c150071e455f92106f08-b2c946e4b16c37ed7d.png":
         if not re.match("(?:http|https)://", STREAM_IMG_URL):
             print(
                 "[ERROR] - Your STREAM_IMG_URL url is wrong. Please ensure that it starts with https://"
@@ -376,7 +376,7 @@ if STREAM_IMG_URL:
 
 
 if SOUNCLOUD_IMG_URL:
-    if SOUNCLOUD_IMG_URL != "https://telegra.ph/file/7645d1e04021323c21db9.jpg":
+    if SOUNCLOUD_IMG_URL != "https://graph.org/file/3cbe3f647baac0495af6c-e62e15f76c9d56d6cf.png":
         if not re.match("(?:http|https)://", SOUNCLOUD_IMG_URL):
             print(
                 "[ERROR] - Your SOUNCLOUD_IMG_URL url is wrong. Please ensure that it starts with https://"
@@ -384,7 +384,7 @@ if SOUNCLOUD_IMG_URL:
 
 
 if YOUTUBE_IMG_URL:
-    if YOUTUBE_IMG_URL != "https://telegra.ph/file/76d29aa31c40a7f026d7e.jpg":
+    if YOUTUBE_IMG_URL != "https://graph.org/file/541179c4226568884e2c8-458b3ab9f686a3224a.png":
         if not re.match("(?:http|https)://", YOUTUBE_IMG_URL):
             print(
                 "[ERROR] - Your YOUTUBE_IMG_URL url is wrong. Please ensure that it starts with https://"
@@ -392,7 +392,7 @@ if YOUTUBE_IMG_URL:
 
 
 if TELEGRAM_VIDEO_URL:
-    if TELEGRAM_VIDEO_URL != "https://telegra.ph/file/8d02ff3bde400e465219a.jpg":
+    if TELEGRAM_VIDEO_URL != "https://graph.org/file/3d9f347edecdc0295ace2-fa4091b1c9c7543aa8.png":
         if not re.match("(?:http|https)://", TELEGRAM_VIDEO_URL):
             print(
                 "[ERROR] - Your TELEGRAM_VIDEO_URL url is wrong. Please ensure that it starts with https://"
